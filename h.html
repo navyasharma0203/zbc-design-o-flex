@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .main
+        {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            background: #3f013f;
+        }
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background: #580158;
+        }
+        .nav-links 
+        {
+            text-align: right;
+            float: right;
+            overflow: hidden;
+            padding: 14px 16px;
+            margin-right:0px;
+            padding-right:20px;
+        }
+        .text
+        {
+            padding: 10rem;
+            position: absolute;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 10px;
+            text-align: center;
+            color: #FFFFFF;
+            bottom: 0;
+            top: -90px;
+        } 
+        .nav-links ul li
+        {
+            list-style: none;
+            display: inline;
+            float: left;
+            top: 2%;
+            padding: 0;
+            margin: 20px;
+            margin-top: -50px;
+            
+        }
+        .nav-links ul li a
+        {
+            color: #fff;
+            text-decoration: none;
+            width: 100px;
+            display: block;
+            padding: 25px 20px;
+            text-align: right;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            position: relative;
+        }
+        .container
+        {
+            position: absolute;
+            left: 74.01%;
+            right: 7.13%;
+            top: 25.87%;
+        }
+        .btn
+        {
+            text-decoration: none;
+            padding: 1px 150px;
+            font-size: 1.25rem;
+            position: absolute;
+            margin: 72px;
+            margin-left: 190px;
+            background-color: cornflowerblue;
+            color: #fff;
+            border-radius: 30px;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 28px;
+            line-height: 40px;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: auto;
+            align-items: center;
+            display: flex;
+        }
+        section
+        {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px;
+            box-sizing: border-box;
+        }
+        .wave
+        {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .part
+        {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            background: linear-gradient(119.61deg,#4A154C 0%, #25306A 73.23%);
+        }
+        .club
+        {
+            text-align: right;
+            padding: 10rem;
+            position: relative;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 50px;
+            color: #FFFFFF;
+        }
+        .club1
+        {
+            text-align: left;
+            padding: 10rem;
+            position: relative;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 50px;
+            color: #FFFFFF;
+        }
+        .page
+        {
+            position: relative;
+            left: 0%;
+            right: 0%;
+            background: linear-gradient(96.41deg, #521755 0%, #293576 99.69%);
+        }
+        .big-text
+        {
+            position: relative;
+            left: 0%;
+            right: 0%;
+            background: linear-gradient(96.41deg, #521755 0%, #293576 99.69%);
+            position: absolute;
+            left: 25.79%;
+            right: 25.74%;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 70px;
+            line-height: 119px;
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: underline;
+
+        }
+        .big-text .p
+        {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            background: linear-gradient(96.41deg, #521755 0%, #293576 99.69%);
+            position: absolute;
+            left: 25.79%;
+            right: 25.74%;
+            font-family: Righteous;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 119px;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: left;
+
+        }
+        .white
+        {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            left: 3px;
+            top: 1962px;
+            background: #FFFFFF;
+        }
+        .moon
+        {
+            left: 19.25%;
+            right: 19.27%;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 56px;
+            line-height: 144px;
+            text-align: center;
+            color: #022275;
+            position: initial;
+        }
+        .img
+        {
+            padding: 0;
+            align-items: center;
+        }
+        .party
+        {
+            position: relative;
+            left: 0%;
+            right: 0%;
+            background: linear-gradient(119.61deg,#4A154C 0%, #25306A 73.23%);
+        }
+        .card 
+        {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            border-radius: 5px;
+        }
+        .card:hover 
+        {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .pic 
+        {
+            border-radius: 5px 5px 0 0;
+        }
+        .container 
+        {
+            padding: 2px 16px;
+        }
+    </style>
+        
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+    
+    <br>  
+    <br>  
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Our Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    <section>  
+        <div class="container">
+            <img src="spaceship.png">
+        </div>
+        <div class="text">
+            <h1>Zero Bugs Club</h1>
+            <h4>Space Division</h4>
+            <h4>To infinity and Beyond!</h4>
+        </div>
+        <div class="button">
+            <button class="btn">Get Started</button>
+        </div>
+        <br>
+        <svg class = "wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,165.3C384,149,480,171,576,154.7C672,139,768,85,864,96C960,107,1056,181,1152,197.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </section>  
+    </div>
+
+    <div class="part">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <section>
+            <img src="zbc-logo.png">
+            <div class="club">
+                <h1>About ZBC</h1>
+                <span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget dolor tristique, dignissim nibh in, ultrices sem. Nunc et ante sed turpis egestas porttitor. Fusce tincidunt, neque vel porttitor ultricies, arcu tellus interdum elit, eget dignissim justo magna ut leo. Aenean ut tellus mattis, imperdiet diam id, vehicula mauris. Nam cursus elementum diam quis auctor.</p>
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="club1">
+                <h1>About Space Division</h1>
+                <span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget dolor tristique, dignissim nibh in, ultrices sem. Nunc et ante sed turpis egestas porttitor. Fusce tincidunt, neque vel porttitor ultricies, arcu tellus interdum elit, eget dignissim justo magna ut leo. Aenean ut tellus mattis, imperdiet diam id, vehicula mauris. Nam cursus elementum diam quis auctor.</p>
+                </span>
+            </div>
+            <img src="img.png">
+            </section>
+            <div class="club1">
+                <h1 style="text-align: center; text-decoration: underline;">Our Work</h1>
+                <span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget dolor tristique, dignissim nibh in, ultrices sem. Nunc et ante sed turpis egestas porttitor. Fusce tincidunt, neque vel porttitor ultricies, arcu tellus interdum elit, eget dignissim justo magna ut leo. Aenean ut tellus mattis, imperdiet diam id, vehicula mauris. Nam cursus elementum diam quis auctor.</p>
+                </span>
+            </div>
+
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1" d="M0,160L80,160C160,160,320,160,480,149.3C640,139,800,117,960,128C1120,139,1280,181,1360,202.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
+        </section>
+    </div>
+    <div class="white">
+        <div class="moon">
+            <h2>Moon Launcher</h2>
+        </div>
+        <center><img src="hexa.png" alt="centered image" height="598" width="598"> </center>
+        <div class="moon">
+            <h2>Our Orbiters</h2>
+        </div>
+        <center><img src="orbiters.png" alt="centered image" height="298" width="898"> </center>
+        <div class="moon">
+            <h2>Other Projects</h2>
+        </div>
+        <center><img src="projects.png" alt="centered image" height="298" width="898"> </center>
+
+        <div class="party">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="club1">
+                <h1 style="text-align: center; text-decoration: underline;">Our Events</h1>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>
